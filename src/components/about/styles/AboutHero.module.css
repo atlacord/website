@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 2rem 4rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bgGrid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(201, 168, 76, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 168, 76, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+}
+
+.bgGlow {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background: radial-gradient(ellipse, rgba(201,168,76,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  animation: fadeUp 0.9s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.back {
+  display: inline-block;
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  transition: color 0.2s;
+}
+
+.back:hover { color: var(--gold); }
+
+.eyebrow {
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: clamp(2.4rem, 2vw, 4.5rem);
+  font-weight: 900;
+  line-height: 1.1;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+.accent {
+  background: linear-gradient(135deg, var(--gold), #e8a030, var(--gold-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.divider {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+  font-size: 1.5rem;
+  color: var(--text-dim);
+}
+
+.divider span:nth-child(1) { color: #1a6b8a; }
+.divider span:nth-child(2) { color: #5a7a2e; }
+.divider span:nth-child(3) { color: #c0392b; }
+.divider span:nth-child(4) { color: #c9a84c; }
