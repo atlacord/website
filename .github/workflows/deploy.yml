@@ -25,11 +25,11 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: git config --global user.email kspa@vt.edu
-      - run: git config --global user.name Kyle S
+      - run: git config --global user.name kdspa
+      - run: git config --global url https://${{ secrets.GH_TOKEN }}@github.com
       - run: npm run deploy
         env:
           NEXT_PUBLIC_BASE_PATH: ''
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
