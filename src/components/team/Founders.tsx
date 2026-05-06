@@ -15,7 +15,7 @@ export default function Founders() {
         <div className={styles.header}>
           <h2 className={styles.title}>Meet The Team</h2>
           <p className={styles.subtitle}>
-            None of this happens without people who showed up and kept showing up.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula quis augue non euismod.
           </p>
         </div>
         <h2 className={styles.roleTitle}>White Lotus</h2>

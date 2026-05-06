@@ -4,8 +4,8 @@ const events: Event[] = [
   {
     id: '1',
     title: 'Star Wars Episode III: Revenge of the Sith',
-    date: '2026-05-04',
-    time: '17:00:00',
+    date: '2026-05-06',
+    time: '03:00:00',
     description: 'As the Clone Wars nears its end, Obi-Wan Kenobi pursues a new threat, while Anakin Skywalker is lured by Chancellor Palpatine into a sinister plot for galactic domination.',
     category: 'movie',
     host: 'Deni',
