@@ -4,7 +4,7 @@ import styles from './styles/Navbar.module.css';
 import DraftBanner from './DraftBanner';
 
 const links = [
-  { href: '/', label: 'Home' },
+  { href: 'https://atlacord.com', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/team', label: 'Meet The Team' },
   { href: '/#events', label: 'Events' },
