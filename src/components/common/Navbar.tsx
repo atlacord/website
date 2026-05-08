@@ -4,7 +4,7 @@ import styles from './styles/Navbar.module.css';
 import DraftBanner from './DraftBanner';
 
 const links = [
-  { href: 'https://atlacord.com', label: 'Home' },
+  { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/team', label: 'Meet The Team' },
   { href: '/#events', label: 'Events' },
@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.nav}>
-      <a href="#home" className={styles.logo}>
+      <a href="/" className={styles.logo}>
         <span className={styles.logoIcon}></span>
         <span className={styles.logoAccent}>ATLAcord</span>
       </a>
