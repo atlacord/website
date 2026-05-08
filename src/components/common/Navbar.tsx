@@ -8,6 +8,7 @@ const links = [
   { href: '/about', label: 'About' },
   { href: '/team', label: 'Meet The Team' },
   { href: '/#events', label: 'Events' },
+  { href: 'https://wiki.atla.sh', label: 'Wiki' }
 ];
 
 export default function Navbar() {
