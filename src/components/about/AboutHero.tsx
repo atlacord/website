@@ -7,10 +7,10 @@ export default function AboutHero() {
       <div className={styles.bgGlow} aria-hidden />
  
       <div className={styles.content}>
-        <p className={styles.eyebrow}>Our Story</p>
+        <p className={styles.eyebrow}>About Us</p>
         <h1 className={styles.title}>
-          Born from a shared<br />
-          <span className={styles.accent}>love of ATLA</span>
+          Lorem ipsum<br />
+          <span className={styles.accent}>dolor sit amet</span>
         </h1>
         <p className={styles.subtitle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula quis augue non euismod. 
